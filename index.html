@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <link rel="apple-touch-icon" href="u-tomlogo.png" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>U-TOM Games</title>
+<meta name="Description" content="U-TOMのゲームをプレイできます!" />
+<meta name="Keywords" content="U-TOM,Game,U-TOM Games" />
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/content.css">
+<!--左側のメニュー-->
+<link rel="stylesheet" href="css/vertical-responsive-menu.css" />
+<!--右上のメニュー-->
+<link rel="stylesheet" href="css/nav-layout.css">
+<!--ページ内メニュー-->
+<link rel="stylesheet" href="css/horizontal_menu.css">
+<!--googlewebフォント-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!--アイコンwebフォント-->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<!--画像の整列-->
+<link rel="stylesheet" href="css/grid.css">
+<!--スライドショー-->
+<link rel="stylesheet" href="css/full-width-slider.css" />
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<noscript>
+<p>※このページはJavaScriptを使用しています。JavaScript設定を有効にしてご覧ください。</p>
+</noscript>
+
+<!--ロゴ（ページ左上のサイト名）-->
+<header class="header">
+  <h1> <a href="index.html" title="U-TOM Games"><span class="h1_1">U-TOM</span><span class="h1_2">Games</span></a> </h1>
+  
+  <!--右上のメニュー--> 
+  <a href="#" class="nav-button"><i class="fa fa-ellipsis-v"></i></a>
+  <div class="nav_right">
+    <div class="nav">
+      <ul>
+        <li> <a href="https://u-tom0319.github.io/avoid">Avoid!!</a></li>
+      </ul>
+    </div>
+  </div>
+  <button type="button" id="toggleMenu" class="toggle_menu"> <i class="fa fa-bars"></i> </button>
+</header>
+
+<!--左側のメニュー-->
+    <!-- / .top_slide --> 
+
+  <!-- / .wrapper --> 
+</div>
+<footer id="footer">
+  <ul class="footerlink">
+    <li><a href="privacy.html">プライバシーポリシー</a></li>
+    <li><a href="company.html">会社概要</a></li>
+    <li><a href="tokusyouhou.html">特定商取引法に基づく表記</a></li>
+  </ul>
+  <p class="copyright">© 2016 企業名やサイト名など All Rights Reserved.</p>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<!--googleのCDN（ネットワーク経由でコンテンツを提供するサービス）よりjqueryをロード-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<!--エフェクト動作--> 
+<script src="js/nav.jquery.min.js"></script> <!--右上のメニュー--> 
+<script>
+    $('.nav').nav();
+</script> 
+<script src="js/vertical-responsive-menu.min.js" ></script> <!--左側のメニュー--> 
+<script src="js/footerFixed.js"></script><!--フッター下部固定--> 
+<script src="js/scrolltopcontrol.js"></script><!--スクロールしながらページのトップに戻る--> 
+<!--スライドショー--> 
+<script src="js/jssor.js"></script> 
+<script src="js/jssor.slider.min.js"></script> 
+<script src="js/full-width-slider.js"></script> 
+<!--画像の整列--> 
+<script src="js/jquery.vgrid.min.js"></script> 
+<!--新着情報のスクロール--> 
+<script src="js/jquery.slimscroll.js"></script> 
+<script>
+$(function(){
+	var vg = $(".grid_wrap").vgrid({
+		easing: "easeOutQuint",
+		useLoadImageEvent: true,
+		time: 400,
+		delay: 20,
+		fadeIn: {
+			time: 500,
+			delay: 50,
+			wait: 500
+		}
+	});
+	$(window).load(function(e){
+		vg.vgrefresh();
+	});
+});
+$('.grid_box_info').slimScroll({
+   size: '10px',
+   color: '#c0c0c0',
+});
+</script>
+</body>
+</html>
